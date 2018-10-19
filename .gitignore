@@ -1,0 +1,21 @@
+*target*
+*.jar
+*.war
+*.ear
+*.class
+*RemoteSystemsTempFiles*
+
+#eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+.classpath
+.settings/
+.DS_S
+.recommenders
+
+#Scala IDE spcific 
+.cache-main
+.scala-dependencies
+.worksheet

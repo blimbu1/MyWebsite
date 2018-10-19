@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example Domain</title>
+  <style type="text/css">
+  .large {
+    /* <!-- dot signifies classes--> */
+    font-size:200%;
+  }
+  #green{
+    /* <!-- hashtag signifies id which should be used only once --> */
+    color:green;
+  }
+  .underline{
+    /* <!-- Can have mulitple classes for a particular section. --> */
+    text-decoration: underline;
+  }
+  .bold{
+    font-weight:bold;
+    /*  hello world*/
+  }
+
+  .bluebox{
+    background-color: #00BFFF;
+    width:200px;
+    height: 200px;
+    /* float: letf; */
+    /*  This makes things floats*/
+    /* position: relative; */
+    /* positioning only works once you have specified start as above */
+    /* position relative moves this with where it would be  */
+    /* left: 100px; */
+     /*Adding margin making it effectively move to right  */
+    /* top:50px; */
+    /* z-index: 1; */
+    /*  Z index is a layering tool. One with the larger z
+    index is going to go on top*/
+    margin:50px 100px 30px 10px;
+    /* margin creates a border around the div*/
+    /* 50px starts for the top */
+    /* can be more specific using
+    margin-left:200px */
+    padding:10px 100px;
+    /* padding is for the contents inside the divs
+    like margin is for div */
+    /* can target just a specific side with
+    padding-left */
+
+  }
+
+  .redbox{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    /* position: absolute; */
+    /* everything else on the page ignores position absolute */
+    /* fixed positioning is the same. But fixed relative to browser window.
+    dosen't move when we scroll down */
+    /* If position not specified for divs then it takes on value static */
+    z-index:2;
+  }
+  p{
+    /* This removes the padding from inside the <p> tag  */
+    padding:0;
+    margin:0;
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="bluebox">
+    <p class="large"> This is some text.</p>
+
+    <p> More text </p>
+  </div>
+
+  <div class="redbox">
+    <p id="green" class="large"> This is some more text.</p>
+  </div>
+
+
+    <p class="floatleft"> The third <span class="underline large bold">word</span> in this paragraph is underlined. </p>
+
+
+</body>
+</html>

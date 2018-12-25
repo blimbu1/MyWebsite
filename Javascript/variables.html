@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning JS</title>
+
+</head>
+<body>
+
+  <input id="myInput" type="text" value="test" />
+
+  <button id="stylesChanger">Change the text</button>
+  <div id="firstDiv">This is some text</div>
+
+  <script type="text/javascript">
+
+    document.getElementById("stylesChanger").onclick=function(){
+      var newText=document.getElementById("myInput").value;
+      document.getElementById("firstDiv").innerHTML=newText;
+    }
+  </script>
+</body>
+</html>

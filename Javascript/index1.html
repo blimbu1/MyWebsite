@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning Javascript</title>
+</head>
+<body>
+
+  <button id="myButton">You Know you want to click me...</button>
+
+  <button id="textchanger">Change first div text</button>
+
+  <div id="firstDiv">This is some text</div>
+
+  <button id="textAppender">Append some text</button>
+
+  <div id="secondDiv">Javascript is ...</div>
+
+  <button id="textCreator">Create some text</button>
+
+  <div id="emptyDiv"></div>
+
+  <script type="text/javascript">
+
+  // we are using onclick command to run a function
+
+    document.getElementById("myButton").onclick=function(){
+      alert("Hi!");
+    }
+
+    document.getElementById("textchanger").onclick=function(){
+      document.getElementById("firstDiv").innerHTML="This is awesome!" ;
+    }
+
+    document.getElementById("textAppender").onclick=function(){
+      document.getElementById("secondDiv").innerHTML=
+      document.getElementById("secondDiv").innerHTML + "Learning JS" ;
+    }
+    document.getElementById("textCreator").onclick=function(){
+      document.getElementById("emptyDiv").innerHTML= "This is might fine" ;
+    }
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Challenge One</title>
+  <style type="text/css">
+
+  #redCircle {
+    background-color: red;
+    border-radius: 50px;
+  }
+
+  div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div id="redCircle"></div>
+
+  <br>
+
+  <button id="Change">Click me</button>
+
+  <script type="text/javascript">
+
+    document.getElementById('Change').onclick = function(){
+       var e1 = document.getElementById('redCircle');
+       e1.style.backgroundColor = 'white';
+    }
+    // var div1 = document.getElementById('redCircle');
+    // div1.onmouseover = function(){
+    //    this.style.backgroundColor = 'white';
+    // }
+
+  </script>
+</body>
+</html>

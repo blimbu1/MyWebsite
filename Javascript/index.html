@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning Javascript</title>
+</head>
+<body>
+
+  <!-- This is an inline javascript -->
+  <!-- This tells what to do on clicking a button. -->
+  <!-- <button onclick="alert('Hi')">Click me!</button> -->
+
+  <p id="text">Some text</p>
+
+  <!-- This says we are goin to be running a JS -->
+  <!-- Convention is to put the script tag in the head or just before the body end tag -->
+  <script type="text/javascript">
+  // This will automatically load the page.
+    // alert("Page loaded!")
+    // document -> refers to the html doc; getElementById -> refers to what element we want to get;
+    // innerHTML -> refers to the content of the element.
+    // alert(document.getElementById("text").innerHTML);
+    document.getElementById("text").innerHTML="some more text";
+  </script>
+
+</body>
+</html>

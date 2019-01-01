@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning JS</title>
+
+</head>
+<body>
+  <p>How many fingers?</p>
+  <input id = "finger" />
+  <button id = "myGuess">Submit</button>
+
+  <br />
+
+  <p id="demo"></p>
+
+
+  <script type="text/javascript">
+    var x = Math.floor(Math.random()*(5)) + 1;
+    document.getElementById('demo').innerHTML = x;
+
+    document.getElementById('myGuess').onclick = function(){
+      if (document.getElementById('finger').value == x){
+        alert("Correct!");
+      }
+      else {
+        alert("Its not correct!");
+      }
+
+    }
+    // document.write(x);
+  </script>
+</body>
+</html>

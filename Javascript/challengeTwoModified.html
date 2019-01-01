@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Challenge Two</title>
+
+  <style>
+
+    .contain{
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+
+    #box{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <p>Your time: <span id="disp"></span></p>
+
+  <br />
+
+  <div class="contain">
+    <div id="box"></div>
+  </div>
+
+
+
+  <script type="text/javascript">
+
+    var clickedTime; var createdTime;var reactionTime;
+
+    function getRandomColor(){
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i=0; i<6; i++){
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function makeBox(){
+      var time = Math.random();
+      var left = Math.floor(Math.random()*100);
+      var top = Math.floor(Math.random()*90);
+      time = time * 5000;
+      setTimeout(function(){
+        if (Math.random() > 0.5){
+          document.getElementById("box").style.borderRadius="50px";
+        }
+        else {
+          document.getElementById("box").style.borderRadius="0px";
+        }
+        document.getElementById("box").style.backgroundColor=getRandomColor();
+        document.getElementById("box").style.left = left+"%";
+        document.getElementById("box").style.top = top +"%";
+        document.getElementById("box").style.display="block";
+        createdTime = Date.now();
+      }, time);
+    }
+
+    document.getElementById("box").onclick = function(){
+      clickedTime = Date.now();
+      reactionTime = (clickedTime - createdTime)/1000;
+      document.getElementById("disp").innerHTML = reactionTime;
+      this.style.display="none";
+      makeBox();
+    }
+
+    makeBox();
+  </script>
+
+</body>
+</html>

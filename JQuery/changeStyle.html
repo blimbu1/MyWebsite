@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning JQuery</title>
+
+  <script type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+	crossorigin="anonymous">
+  </script>
+
+  <style type = "text/css">
+
+    .square {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      margin-top: 10px;
+    }
+    #circleOne {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 100px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="circleOne"></div>
+
+  <div class="square"></div>
+
+  <div class="square"></div>
+
+
+  <script>
+  // This exercise demonstrates the use of css attribute
+  // and also this
+    // $("div").click(function(){
+    //   $(this).css("display","none");// can use $(this).css("width" , "300px");
+    // })
+    $("#circleOne").click(function(){
+      $(".square").fadeOut();
+    })
+
+  </script>
+</body>
+</html>

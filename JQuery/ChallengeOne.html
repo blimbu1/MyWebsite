@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning JQuery</title>
+
+  <script type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+	crossorigin="anonymous">
+  </script>
+
+  <style type = "text/css">
+
+    .square {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+    #circleOne {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="square"></div>
+  </br>
+  <div class="square"></div>
+  </br>
+  <div id="circleOne"></div>
+
+  <script>
+  // Dont need to select particluar ids
+  // We can even select divs
+    $("#circleOne").click(function(){
+        alert("Circle Clicked!")
+    })
+  </script>
+</body>
+</html>

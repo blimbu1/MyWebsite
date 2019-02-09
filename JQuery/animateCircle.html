@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning JQuery</title>
+
+  <script type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+	crossorigin="anonymous">
+  </script>
+
+  <style type = "text/css">
+    #circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: green;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="circle"></div>
+
+  <script>
+    $("#circle").click(function(){
+      // $(this).css("width", "300px");
+      // $(this).css("height", "300px");
+      // $(this).css("border-radius", "150px");
+      $(this).animate({
+          width:"300px",
+          height: "300px",
+          borderRadius: "150px",
+          marginLeft:"100px", // CSS attributes named differently from
+          marginTop:"100px"   // javascript attributes.
+      },1500)
+    })
+  </script>
+</body>
+</html>

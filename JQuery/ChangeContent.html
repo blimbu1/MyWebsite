@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning JQuery</title>
+
+  <script type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+	crossorigin="anonymous">
+  </script>
+
+  <style type = "text/css">
+
+    .square {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+    #circleOne {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="circleOne"></div>
+
+  <p>This is some text</p>
+
+  <iframe src="https://www.thesun.co.uk/"></iframe>
+
+  <script>
+  // Dont need to select particluar ids
+  // We can even select divs
+    // $("#circleOne").click(function(){
+    //     $("p").html("HELLO WORLD!!");
+    //     // putting some content inside the html brackets will update content
+    //     // leaving it return the value
+    //     //  for example alert($("p").html())
+    // })
+
+    $("#circleOne").click(function(){
+      $("iframe").attr("src","https://en.wikipedia.org/wiki/Jeff_Atwood");
+    })
+  </script>
+</body>
+</html>
